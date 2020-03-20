@@ -32,9 +32,7 @@ public class Main {
 		main.service.saveUser(main.user);
 
 		// dohvatam usera preko contexta
-		// u oba slucaja i pored new() ne dobijam novog vec isti objekat
-		// mozda dto...
-
+		
 		User user1 = (User) ctx.getBean("user");
 		main.make(user1);
 		main.service.saveUser(user1);
